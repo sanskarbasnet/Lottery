@@ -38,8 +38,21 @@ public class InOut {
         } while(weeks<=0);
         return weeks;
     }
-    public Set getNumbers(){
+    public int getPlayersNum(){
         System.out.println("#####################################");
+        int num;
+        do {
+            System.out.print("Enter the number of Players: ");
+            num = Genio.getInteger();
+        } while(num <= 0);
+        return num;
+    }
+    public String inputName(){
+        System.out.print("Enter Your Name: ");
+        String name = Genio.getString();
+        return name;
+    }
+    public Set getNumbers(){
         Set<Integer> guesses = new HashSet<>();
         int number;
         for(int i = 0; i < 6; i++) {

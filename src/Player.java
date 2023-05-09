@@ -49,10 +49,9 @@ public class Player {
         this.winnings = winnings;
     }
     public void printDetails(){
-        System.out.println("########################");
-        System.out.println(name + ":");
+        System.out.println("Player: " + name);
+        System.out.println("Your Numbers: " + guessNums);
         System.out.println("Winnings: $" + winnings);
         System.out.println("Cost: $" + cost);
-        System.out.println("#######################");
     }
 }
