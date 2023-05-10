@@ -52,6 +52,7 @@ public class Lottery extends InOut {
                 System.out.println("******************************************************");
             }
         }
+        Thread.sleep(10000);
 
     }
 
